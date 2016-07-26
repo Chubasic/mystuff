@@ -1,14 +1,15 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
-<title>What's your name pal?◉ _◉ </title>
-</head>
-<body>
-What's your name pal?◉ _◉     
-    <form action="/cgi-bin/form.py">
-        <input type="text" name="Name" placeholder="Enter your name">
-        <input type="submit">
-    </form>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Welcome to Flask!</h1>
+<br>
+<p>Click <a href="/logout">here</a> to logout.</p>
+<br><br>
+<h3>Posts:</h3>
+{% for post in posts %}
+  <strong>Title:</strong> {{ post.title }} <br>
+  <strong>Post:</strong> {{ post.description }} <br>
+<br>
+{% endfor %}
+  
+{% endblock %}
