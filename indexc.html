@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Guro Calculator</title>
+</head>
+<body>
+	<form method="post" action="./cgi-bin/formc.py">
+		<input type="text" name="number1" value="0">
+		<select name="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+		<input type="text" name="number2" value="0">
+		<p>
+			<button type="submit">calculate</button>
+			<button type="reset">clear</button>
+		</p>
+	</form>
+</body>
+</html>
