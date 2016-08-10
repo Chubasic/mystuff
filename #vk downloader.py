@@ -1,4 +1,5 @@
 #vk downloader
+# I'll read about all these modules, honestly.
 import webbrowser
 import pickle
 import json
