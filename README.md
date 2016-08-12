@@ -1,2 +1,2 @@
 # mystuff
-Hi there)
+print ("Hello werld")
